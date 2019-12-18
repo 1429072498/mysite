@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #container{
+            width: 100%;
+            background-color: #fff9ed;
+        }
+        #header{
+            height: 128px;
+            margin: auto;
+            background: url(images/head_bg.jpg) repeat-x;
+        }
+        #banner{
+            height: 373px;
+            width: 980px;
+            margin: auto;
+            background:url(images/banner.jpg);
+        }
+        #jpzs{
+            height: 330px;
+            width: 980px;
+            background-color: #ec6e47;
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        #clqy{
+            height: 404px;
+            width: 980px;
+            margin: auto;
+            margin-top: 80px;
+            margin-bottom: 65px;
+        }
+        #footer{
+            height: 100px;
+            font-size: 14px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding-top: 55px;
+        }
+        #header ul{
+            list-style-type: none;
+            width: 980px;
+            margin: auto;
+        }
+        #header ul li{
+            float: left;
+            font-size: 16px;
+        }
+        #header ul li:first-child{
+            width: 178px;
+            height: 118px;
+            background: url(images/logo.png) no-repeat;
+        }
+        #header ul li a{
+            display: block;
+            width: 119px;
+            height: 91px;
+            text-align: center;
+            line-height: 70px;
+            text-decoration: none;
+            color: white;
+        }
+        #header ul li a:hover{
+            background: url('images/xuanfu.png') no-repeat;
+        }
+        #sub_jpzs{
+            height: 323px;
+            width: 910px;
+            background: white;
+            margin: auto;
+            padding-top:7px;
+        }
+        #sub_jpzs dl{
+            float: left;
+        }
+        .dl_left{
+            height: 316px;
+            width: 280px;
+            margin-left: 10px;
+        }
+        .dl_center{
+            height: 316px;
+            width: 280px;
+            margin-left: 5px;
+        }
+        .dl_right{
+            height: 316px;
+            width: 325px;
+            margin-left: 5px;
+        }
+        .dl_left .left_1{
+            height: 169px;
+            width: 162px;
+            background:url('images/pic01.jpg') no-repeat;
+            float: left;
+        }
+        .dl_left .left_2{
+            height:169px;
+            width: 118px;
+            float: left;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 169px;
+            font-size: 16px;
+        }
+        .dl_left .left_3{
+            height: 137px;
+            width: 162px;
+            background: url('images/pic02.jpg') no-repeat;
+            float: left;
+            margin-top: 10px;
+        }
+        .dl_left .left_4{
+            height:137px;
+            width: 118px;
+            float: left;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 137px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .dl_center .center_1{
+            height: 117px;
+            width: 162px;
+            background:url('images/pic03.jpg') no-repeat;
+            float: left;
+        }
+        .dl_center .center_2{
+            height:117px;
+            width: 118px;
+            float: left;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 117px;
+            font-size: 16px;
+        }
+        .dl_center .center_3{
+            height: 188px;
+            width: 162px;
+            background:url('images/pic04.jpg') no-repeat;
+            float: left;
+            margin-top: 10px;
+        }
+        .dl_center .center_4{
+            height:188px;
+            width: 118px;
+            float: left;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 188px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .dl_right dt{
+            width: 205px;
+            height: 314px;
+            background: url(images/pic05.jpg) no-repeat;
+            float: left;
+        }
+        .dl_right dd{
+            height: 314px;
+            width: 120px;
+            float: left;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 314px;
+            font-size: 16px;
+        }
+        #clqy h2{
+            width: 254px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: normal;
+            text-align: center;
+            line-height: 50px;
+            color: #ffffff;
+            background: #ea6c46;
+        }
+        #clqy div{
+            width: 980px;
+            height: 354px;
+            border: 1px solid #dcd2ba;
+        }
+        #clqy dl{
+            width: 229px;
+            height: 330px;
+            float: left;
+            border: 1px solid #dcd2ba;
+            margin-top: 15px;
+        }
+        #clqy dl:nth-child(1){
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+        #clqy dl:nth-child(2),#clqy dl:nth-child(3){
+            margin-right: 5px;
+        }
+        #clqy dl:nth-child(1) dt{
+            height: 212px;
+            width: 229px;
+            border: 1px solid #dcd2ba;
+            background: url('images/match01.jpg') no-repeat;
+        }
+        #clqy dl:nth-child(2) dt{
+            height: 212px;
+            width: 229px;
+            border: 1px solid #dcd2ba;
+            background: url('images/match02.jpg') no-repeat;
+        }
+        #clqy dl:nth-child(3) dt{
+            height: 212px;
+            width: 229px;
+            border: 1px solid #dcd2ba;
+            background: url('images/match03.jpg') no-repeat;
+        }
+        #clqy dl:nth-child(4) dt{
+            height: 212px;
+            width: 229px;
+            border: 1px solid #dcd2ba;
+            background: url('images/match04.jpg') no-repeat;
+        }
+        #clqy dl dd{
+            width: 229px;
+            font-size: 22px;
+            color: #7a7a7a;
+            margin-top: 22px;
+            margin-bottom: 22px;
+            text-align: center;
+        }
+        #clqy dl dd a{
+            display: block;
+            width: 200px;
+            height: 38px;
+            font-size: 18px;
+            line-height: 38px;
+            margin: auto;
+            background: #f3734e url('images/gouwu.jpg') no-repeat;
+            text-decoration: none;
+            color: white;
+            text-align: left;
+            text-indent: 59px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <ul >
+                <li></li>
+                <li><a href="#">穿搭速递</a></li>
+                <li><a href="#">时尚大片</a></li>
+                <li><a href="#">星着装</a></li>
+                <li><a href="#">时尚圈</a></li>
+                <li><a href="#">时尚专栏</a></li>
+                <li><a href="#">会员/登陆</a></li>
+            </ul>
+        </div>
+        <div id="banner"></div>
+        <div id="jpzs">
+            <div id="sub_jpzs">
+                <dl class="dl_left">
+                    <dt class="left_1"></dt>
+                    <dd class="left_2">明星风尚</dd>
+                    <dt class="left_3"></dt>
+                    <dd class="left_4">时尚博主</dd>
+                </dl>
+                <dl class="dl_center">
+                    <dt class="center_1"></dt>
+                    <dd class="center_2">流行搭配</dd>
+                    <dt class="center_3"></dt>
+                    <dd class="center_4">精选秀场</dd>
+                </dl>
+                <dl class="dl_right">
+                    <dt></dt>
+                    <dd>环球街拍</dd>
+                </dl>
+            </div>
+        </div>
+        <div id="clqy">
+            <h2>潮流前沿 / Tidal current</h2>
+            <div>
+                <dl>
+                    <dt></dt>
+                    <dd>潮流饰品</dd>
+                    <dd><a href="#">快速购买通道</a></dd>
+                </dl>
+                <dl>
+                    <dt></dt>
+                    <dd>时尚女鞋</dd>
+                    <dd><a href="#">快速购买通道</a></dd>
+                </dl>
+                <dl>
+                    <dt></dt>
+                    <dd>精品包包</dd>
+                    <dd><a href="#">快速购买通道</a></dd>
+                </dl>
+                <dl>
+                    <dt></dt>
+                    <dd>百搭衣帽</dd>
+                    <dd><a href="#">快速购买通道</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copyright © 2006-2016 CHAOLIUFUSHIcom, All rights reserved.</p>
+            <p>2001-2018，版权所有 潮流服饰 85CP备13385453</p>
+        </div>
+    </div>
+</body>
+</html>
